@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Hiển thị các số nguyên tố</title>
+</head>
+<body>
+<script type="text/javascript">
+  let numbers = parseInt(prompt("Nhập vào số lượng số nguyên tô muốn in ra: "));
+  let count;
+  let N = 2;
+  let i = 2;
+  let a = 0;
+  for(count = 0; count < numbers; count++){
+    document.write("<br>"+N);
+    for(i = 0; i < N; i++){
+      a = N%i;
+      if (a == 0) {
+        N++;
+      }
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prime number display</title>
+</head>
+<body>
+<h1>Liệt kê số nguyên tố đầu tiên</h1>
+<form action="" method="post" enctype="multipart/form-data">
+Nhập n: <input type="number" name="number" id="in"/>
+    <input type="submit" value="listed" name="listed" onclick="testPrime()"/>
+</form>
+<script>
+    let numbers = parseInt(prompt("Nhập vào số lượng số nguyên tô muốn in ra: "));
+    let count;
+    let N = 2;
+    let i = 2;
+    let a = 0;
+    for(count = 0; count < numbers; count++){
+        document.write("<br>"+N);
+        for(i = 0; i < N; i++){
+            a = N%i;
+            if (a == 0) {
+                N++;
+            }
+        }
+    }
+</script>
+</body>
+</html>
